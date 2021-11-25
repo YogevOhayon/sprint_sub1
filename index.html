@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Yogev</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body onload="initGame(0)">
+
+  <h1>💣Minesweeper💥</h1>
+
+  <div>
+    <button class="level-0" onclick="initGame(0)">Beginner</button>
+    <button class="level-1" onclick="initGame(1)">Medium</button>
+    <button class="level-2" onclick="initGame(2)">Expert</button>
+  </div>
+
+  <div>
+    <span class="lives" class="life"></span>
+    <span class="lives" class="life"></span>
+    <span class="lives" class="life"></span>
+  </div>
+
+  <div>
+    <button class="smiley" onclick="initGame()"></button>
+    <button class="timer"> <span class="minute">00</span>:<span class="second">00</span< /button>
+  </div>
+
+  <div class="board-container"></div>
+
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>
